@@ -1,0 +1,25 @@
+{
+  "name": "screenshot-annotator",
+  "version": "1.0.0",
+  "description": "Screenshoty webu s červenými číslovanými značkami pre návody a príručky",
+  "type": "module",
+  "bin": {
+    "shotmark": "./bin/shotmark.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "templates"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "playwright-core": "^1.55.0"
+  },
+  "scripts": {
+    "example": "node bin/shotmark.mjs -c examples/demo.config.mjs",
+    "example:web": "node bin/shotmark.mjs -c examples/wikipedia.config.mjs",
+    "example:zsl": "node bin/shotmark.mjs -c examples/zsl.config.mjs"
+  }
+}
